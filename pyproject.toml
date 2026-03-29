@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lib-explorer"
+version = "1.1.0"
+description = "A CLI tool for exploring Python modules and Robot Framework libraries"
+readme = "README.md"
+requires-python = ">=3.9"
+
+authors = [
+    { name = "Khaled LIMAM" }
+]
+
+license = { file = "LICENSE" }
+
+dependencies = [
+    "rich>=13.0",
+    "InquirerPy>=0.3.4",
+    "robotframework >=6.0",
+    "Pygments>=2.15",
+]
+
+keywords = ["robotframework", "documentation", "interactive", "cli", "python"]
+
+[project.urls]
+Homepage = "https://github.com/khaledlim/rf-explorer"
+Source = "https://github.com/khaledlim/rf-explorer"
+Issues = "https://github.com/khaledlim/rf-explorer/issues"
+
+[project.scripts]
+rf-explorer = "rf_explorer.cli:cli"
