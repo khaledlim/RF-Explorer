@@ -50,3 +50,8 @@ The tool can run in:
 
 ```bash
 pip install lib-explorer
+
+If you are using the Windows CMD terminal, run the following command to force ASCII support:
+
+```bash
+reg add HKCU\Console /v CodePage /t REG_DWORD /d 65001 /f
